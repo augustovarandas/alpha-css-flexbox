@@ -1,0 +1,125 @@
+* {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+body {
+  background: url('images/image7.jpg') no-repeat;
+  background-size: cover;
+  color: rgb(226, 226, 226);
+  font-family: 'Quicksand', sans-serif;
+  font-style: inherit;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.principal {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.no-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 5% 5%;
+}
+
+.no-account > h1 {
+  width: 60%;
+}
+
+.no-account > p {
+  font-size: 1.5rem;
+}
+
+.signup-box {
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  justify-content: flex-end;
+  padding: 5%;
+  width: 30%;
+}
+
+.signup-box > h3 {
+  margin-bottom: 10%;
+}
+
+.signup-box > p {
+  font-size: 1.5rem;
+}
+
+#signup-button {
+  background-color: rgb(255, 0, 0);
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 1px;
+  margin: 5% 0;
+  color: white;
+}
+
+#have-account {
+  color: white;
+  font-size: 1.5rem;
+}
+
+#email, #login, #password {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  border-bottom: 0.5px solid rgb(200, 200, 200);
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+}
+
+#checkbox-div {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+#checkbox-div > p {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+  * {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  * {
+    font-size: 10px;
+  }
+
+  body {
+    background-position: right;
+  }
+
+  .principal {
+    flex-direction: column-reverse;
+  }
+  
+  .signup-box {
+    width: 100%;
+  }
+  
+  #email, #login, #password {
+    width: 90%;
+  }
+
+  #signup-button {
+    width: 90%;
+  }
+}
